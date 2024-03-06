@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 150,
+  "id": 154,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -83,8 +83,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 22,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -108,7 +108,7 @@
             "uid": "ff3bcb37-0034-4ff7-8e26-9b166f5a51a6"
           },
           "dimensions": {
-            "CertificateArn": "arn:aws:acm:us-west-2:701691527340:certificate/3b78574d-b99f-4822-b825-5ed98d854349"
+            "CertificateArn": "*"
           },
           "expression": "",
           "id": "",
@@ -127,115 +127,7 @@
           "statistic": "Average"
         }
       ],
-      "title": "Days to Expiry production.scribesecurity.com",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "cloudwatch",
-        "uid": "ff3bcb37-0034-4ff7-8e26-9b166f5a51a6"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unitScale": true
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 0
-      },
-      "id": 2,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "cloudwatch",
-            "uid": "ff3bcb37-0034-4ff7-8e26-9b166f5a51a6"
-          },
-          "dimensions": {
-            "CertificateArn": "arn:aws:acm:us-west-2:701691527340:certificate/c3454e0f-f74a-4c98-9394-0afa303af032"
-          },
-          "expression": "",
-          "id": "",
-          "label": "",
-          "logGroups": [],
-          "matchExact": true,
-          "metricEditorMode": 0,
-          "metricName": "DaysToExpiry",
-          "metricQueryType": 0,
-          "namespace": "AWS/CertificateManager",
-          "period": "",
-          "queryMode": "Metrics",
-          "refId": "A",
-          "region": "default",
-          "sqlExpression": "",
-          "statistic": "Average"
-        }
-      ],
-      "title": "Days to Expiry scribesecurity.com",
+      "title": "Remaining Days to Expiry",
       "type": "timeseries"
     }
   ],
@@ -251,8 +143,8 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "ACM alerts",
-  "uid": "bfe26e83-fab9-4231-85ff-0684904160cf",
+  "title": "ACM Monitoring",
+  "uid": "bfe26e83-fab9-4231-85ff-0684904160cg",
   "version": 4,
   "weekStart": ""
 }
